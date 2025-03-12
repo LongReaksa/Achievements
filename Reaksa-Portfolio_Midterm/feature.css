@@ -1,0 +1,844 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+* {
+
+    scroll-behavior: smooth;
+}
+
+#overlay {
+    background-image: url(image/cover.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    transition: 0.5;
+}
+
+#header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    align-items: center;
+    top: 0;
+    z-index: 3
+    ;
+}
+
+#header ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+#header li {
+    margin-left: 30px;
+    font-size: 25px;
+    border: 2px solid rgb(70, 127, 142);
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#header li:hover {
+    background-color: rgb(45, 209, 255);
+    transform:scale(1.2);
+} 
+
+#header li a {
+    color: white;
+    text-decoration: none;
+}
+
+.name {
+    font-size: 180%;
+}
+
+.name span {
+    color: rgb(70, 127, 142)
+}
+
+#bodyName {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin-left: 20%;
+    top: 0;
+    margin-top: -80px;
+}
+
+/* #btnPortfolio {
+    display: block;
+    padding: 20px 55px;
+    font-size: 25px;
+    font-weight: bold;
+    background: none;
+    color: white;
+    border: 2px solid rgb(70, 127, 142);
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+} */
+
+#btnPortfolio:hover {
+    background-color: rgb(0, 200, 255);
+    color: white;
+    border-radius: 10px;
+    transform:scale(1.);
+    box-shadow: 1px 1px 60px rgb(105, 204, 235);
+}
+
+#bodyName p span {
+    color: rgb(61, 162, 189);
+    font-weight: bold;
+    text-shadow: 1px 1px 60px black;
+}
+
+#secondBody {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#page1 {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+}
+
+#pf {
+    width:35%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px rgba(184, 218, 228, 0.515);
+    transition: 0.5s;
+}
+
+#pf:hover {
+    transform:scale(1.05);
+    box-shadow: 1px 1px 60px rgb(0, 200, 255);
+}
+
+#info {
+    width: 55%;
+    height: 100%;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+#info #title {
+    margin-top: -20px;
+    margin-bottom: 0px;
+}
+
+#info p {
+    font-size: 130%;
+    height: 20%;
+    width: 100%;
+    display: inline-flex;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size:430%;
+    margin-top: 100px;
+}
+
+#skill {
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 25px;
+    margin-bottom: -25px;
+}
+
+#skill div {
+    margin-right: 40px;
+}
+
+#skill .line {
+    margin-top: -40px;
+    color: rgb(70, 127, 142);
+}
+
+#title span {
+    color: rgb(70, 127, 142);
+}
+
+#knowlage {
+    font-size: 150%;
+    font-weight: bolder; 
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#knowlage div {
+    margin: 25px 0px;
+    display: flex;
+}
+
+#knowlage div:nth-child(odd) {
+    margin-bottom: -25px;
+    color: rgb(70, 127, 142);
+}
+
+#page2 {
+    width: 100%;
+    height: 65vh;
+    justify-content: space-around;
+    display: flex;
+    margin-bottom: -50px;
+}
+
+#leaderBox {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+#leaderBox div {
+    width: 25%;
+    background-color: rgb(58, 58, 58);
+    border-radius: 15px;
+    padding: 25px;
+    transition: 0.5s;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#leaderBox div:hover {
+    transform:scale(1.05);
+    
+    box-shadow: 1px 1px 60px rgba(45, 209, 255);
+    background-color: rgba(0, 200, 255, 0.8);
+}
+
+#leaderBox div i {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+#leaderBox div h3 {
+    font-size: 30px;
+}
+
+#leaderBox div p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#leaderBox div a {
+    color: white;
+}
+
+#page3 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom:100px;
+}
+
+#leaderBox2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 50px;
+    width: 30%;
+    height: 100%;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+    transition: 1s;
+
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    zoom: 60px;
+}
+
+.detail {
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgb(45, 209, 255));
+    transition: 1s;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    border-radius: 15px;
+    text-align: center;
+    top: -100%;
+}
+
+.card:hover .detail {
+    top: 0%;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 60px rgba(45, 209, 255);
+}
+
+.detail h3 {
+    font-size: 30px;
+}
+
+.detail p {
+    font-size: 130%;
+}
+
+.detail i {
+    padding: 20px 0px;
+    font-size: 350%;
+}
+
+#page4 {
+    width: 100%;
+    height: 60vh;
+    margin-top: 50px;
+    display: flex;
+}
+
+#contact {
+    width: 40%;
+    height: auto;
+}
+
+#titleContact {
+    text-align: left;
+    font-weight: bolder;
+    font-size:330%;
+}
+
+#titleContact span {
+    color: rgb(70, 127, 142);
+}
+
+.contact {
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+.contact i {
+    margin-right: 10px;
+    color: rgb(70, 127, 142);
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: 15px 15px;
+    font-size: large;
+    margin-left: 20%;
+    font-weight: bold;
+    background-color:rgba(0, 0, 0, 0.514);
+    color: white;
+    border-width: 2px;
+    border-style: solid;
+    text-decoration: none;
+    border-color: rgb(70, 127, 142);
+    margin-top: 40px;
+    border-radius: 10px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.download-button:hover {
+    background-color: rgb(45, 209, 255);
+    color: white;
+    transform:scale(1.1);
+}
+
+#social {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+#social i {
+    margin-right: 20px;
+    transition: 0.5s;
+}
+
+#social i:hover {
+    color: rgb(45, 209, 255);
+    transform:scale(1.5);
+}
+
+#form {
+    width: 60%;
+    margin-top: 50px;
+}
+
+#form .input,
+#message-input {
+  background-color: rgb(58, 58, 58);
+  border-style: none;
+  margin-bottom: 15px;
+  border-radius:  10px;
+  width: 100%;
+  height: 50px;
+  padding: 13px;
+  padding-left: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+form {
+  padding: 0;
+}
+
+#message-input {
+  width: 100%;
+  height: 150px;
+}
+
+#submit {
+  height: 50px;
+  width: 25%;
+  border: rgb(70, 127, 142);
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-style: solid;
+  margin-bottom: 15px;
+  border-radius:  10px;
+  padding: 13px;
+  padding-left: 10px;
+  margin-top: 10px;
+  font-size: large;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+
+#submit:hover {
+    background-color: rgb(45, 209, 255);
+    transform:scale(1.1);
+}
+
+#footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 70px;
+    background-color: rgb(58, 58, 58);
+    justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+
+    #overlay {
+        background-image: url('image/coverCropped2.JPG');
+    }
+
+    #header {
+        width: 100%;
+        height: 70px;
+        margin: auto;
+    }
+
+    #header .name {
+        font-size: x-large;
+        font-weight: bolder;
+    }
+
+    #header li {
+        margin-left: 15px;
+        font-size: 20px;
+        padding: 6px 12px;
+    }
+
+    #bodyName {
+        font-size: 60px;
+        margin-left: 10%;
+        margin-top: 10px;
+        margin-bottom: 100px;
+        height: 80vh;
+    }
+
+    #btnPortfolio {
+        padding: 15px 40px;
+        font-size: 20px;
+    }
+
+    #secondBody {
+        width: 90%;
+    }
+
+    #page1 {
+        flex-direction: column;
+        height: auto; 
+    }
+
+    #page1 #pf {
+        width: 50%;
+        height: 70vh;
+        margin-bottom: 50px;
+    }
+    
+    #knowlage {
+        margin-bottom: -20px;
+    }
+
+    #info {
+        width: 100%;
+        font-size: larger;
+        margin-left: 0;
+    }
+
+    #info p {
+        margin: 40px auto;
+    }
+
+    #info #title {
+        margin-top: 50px;
+        font-size: 300%;
+    }
+
+    #page2 {
+        height: auto;
+        flex-direction: column;
+    }
+
+    #leaderBox {
+        flex-direction: row;
+        height: auto;
+    }
+    
+    #leaderBox div {
+        width: 90%;
+        margin-bottom: 30px;
+        margin: auto;
+    }
+    
+    #leaderBox div i {
+        font-size: 30px;
+    }
+
+    #leaderBox div h3 {
+        font-size: 20px;
+    }
+
+    #leaderBox div p {
+        font-size: 15px;
+    }
+
+    #leaderBox div a {
+        font-size: 15px;
+    }
+
+    #page3 {
+        flex-direction: row;
+        height: auto;
+    }
+
+    #leaderBox2 {
+        width: 32%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #leaderBox2 .detail {
+        padding: 0 5%;
+        width: 90%;
+    }
+
+    #leaderBox2 img {
+        margin-bottom: -5px;
+    }
+
+    #leaderBox2 div i {
+        font-size: 30px;
+        padding-bottom: 0;
+    }
+
+    #leaderBox2 div h3 {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #leaderBox2 div p {
+        padding: 5px 0;
+        font-size: 15px;
+    }
+
+    #pf {
+        height: 700px;
+        width: 500px;
+        margin: auto;
+        height: -100px;
+        display: flex;
+        margin-top: -100px;
+        margin-bottom: 100px;
+    }
+
+    #page4 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+    #titleContact {
+        text-align: center;
+    }
+
+    #social {
+        margin: 50px auto;
+    }
+
+    #contact {
+        text-align: center;
+        width: 100%;
+    }
+
+    #form {
+        width: 100%;
+    }
+
+    .download-button {
+        display: flex;
+        margin: auto;
+        align-content: center;
+    }
+
+    #submit {
+        display: flex;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        width: 100%;
+        scrollbar-width: none;
+    }
+    #overlay {
+        background-image: url('image/coverCropped.JPG');
+    }
+
+    #header {   
+        width: 100%;
+        height: 100px;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .name {
+        font-size: xx-large;
+    }
+
+    #header .name {
+        margin-top: 10px;
+        font-size: x-large;
+    }
+
+    #header ul {
+        text-align: center;
+        margin: 20px 0;
+        padding-left: 0;
+    }   
+
+    #header li {
+        margin-left: 10px;
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    #bodyName {
+        position: relative;
+        font-size: 40px;
+        margin: auto;
+        margin-left: 10vw;
+    }
+
+    #bodyName p {
+        margin-top: -85px;
+    }
+
+    #btnPortfolio {
+        padding: 12px 30px;
+        font-size: 18px;
+    }
+
+    #secondBody {
+        width: 95%;
+    }
+
+    #page1 #pf {
+        position: relative;
+        top: -100px;
+        width: 60%;
+        height: 60%;
+    }
+
+    #title {
+        font-size: 200%;
+    }
+
+    #info {
+        margin: auto;
+        width: 90%;
+        text-align: left;
+    }
+
+    #info #title {
+        margin-top: -80px;
+    }
+
+    #knowlage {
+        font-size: 120%;
+    }
+
+    #knowlage div {
+        display: flex;
+        justify-content: center;
+    }
+
+    #skill {
+        font-size: 70%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: auto;
+        justify-content: center;
+    }
+
+    #skill div {
+        margin: 10px 15px;
+    }
+
+    #skill div .line {
+        font-size: 40px;
+        font-weight: 900;
+        margin-top: -50px;
+    }
+
+    #leaderBox {
+        flex-direction: column;
+    }
+
+    #leaderBox div {
+        width: 60%;
+        margin-bottom: 30px;
+        margin: auto;
+    }
+
+    #leaderBox div i {
+        font-size: 40px;
+    }
+
+    #leaderBox div h3 {
+        font-size: 24px;
+    }
+
+    #leaderBox div p {
+        font-size: 16px;
+    }
+
+    #page3 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #page3 .card {
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .card {
+        height: -10%;
+        width: 90%;
+        margin: auto;
+    }
+
+    .card img {
+        margin: 0;
+        margin-bottom: -5px;
+    }
+
+    #titleContact {
+        margin-top: -30px;
+        font-size: 200%;
+        text-align: center;
+    }
+
+    #contact {
+        margin-top: 50px;
+    }
+
+    .contact {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #social {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #leaderBox2 {
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    #social i {
+        margin-right: 15px;
+    }
+
+    .download-button {
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    #submit {
+        display: flex;
+        width: 50%;
+        margin: auto;
+    }
+
+    #footer {
+        font-size: 12px;
+        text-align: center;
+        padding: 0 10px;
+    }
+}
