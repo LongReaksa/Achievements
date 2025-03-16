@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Check the weather for any city with real-time updates."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Weather App</h1>
+    </header>
+    <main class="container">
+      <div class="form">
+        <input
+          type="text"
+          placeholder="Enter city name"
+          aria-label="City name"
+          id="cityInput"
+        />
+        <button aria-label="Search weather">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/016/716/177/original/search-3d-icon-png.png"
+            alt="Search icon"
+          />
+        </button>
+      </div>
+      <p id="error" role="alert" aria-live="polite">Invalid city name.</p>
+
+      <div id="details" class="details">
+        <img id="weatherIMG" src="images/clouds.png" alt="Weather condition" />
+        <p id="temp" class="temp">-</p>
+        <p id="cityName" class="city-name">-</p>
+        <div class="sub-details">
+          <div class="sub-detail-item">
+            <img src="images/humidity.png" alt="Humidity icon" />
+            <div class="sub2-details">
+              <p id="humidity" class="value">0%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="sub-detail-item">
+            <img src="images/wind.png" alt="Wind speed icon" />
+            <div class="sub2-details">
+              <p id="windSpeed" class="value">0 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

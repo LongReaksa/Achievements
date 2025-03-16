@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: #232323;
+  color: #e0e0e0;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+  text-align: center;
+  padding: 10px 0;
+  background: #292929;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(54, 53, 53, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+header h1 {
+  margin: 0;
+  color: #ffd700;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.container {
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #292929;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.form input {
+  border: 0;
+  width: 75%;
+  height: 50px;
+  outline: 0;
+  border-radius: 10px;
+  background: #f0f8ff;
+  color: #333;
+  padding-left: 15px;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form input:focus {
+  background-color: #e6f0fa;
+  transform: scale(1.02);
+}
+
+.form button {
+  height: 50px;
+  width: 20%;
+  background: #ffd700;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #e6c200;
+  transform: scale(1.1);
+}
+
+.form button img {
+  width: 25px;
+  transition: transform 0.3s ease;
+}
+
+.form button:hover img {
+  transform: scale(1.2);
+}
+
+#error {
+  color: #ff4d4d;
+  display: none;
+  font-size: 16px;
+  margin-bottom: 15px;
+  transition: opacity 0.3s ease;
+}
+
+.details {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.details.active {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.details p.temp {
+  margin: 0;
+  font-size: 48px;
+  color: #ffd700;
+  transition: color 0.3s ease;
+}
+
+.details p.city-name {
+  font-size: 36px;
+  margin: 20px 0;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.details img {
+  width: 120px;
+  margin: 20px 0;
+  transition: transform 0.3s ease;
+}
+
+.details img:hover {
+  transform: scale(1.1);
+}
+
+.sub-details {
+  width: 120%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.sub-detail-item {
+  display: flex;
+  align-items: center;
+  background: #1a1a1a;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.sub-detail-item:hover {
+  transform: translateY(-3px);
+  background-color: #222;
+}
+
+.sub-details img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.sub2-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #b0b0b0;
+}
+
+.sub2-details .value {
+  font-size: 22px;
+  color: #fff;
+  margin: 0;
+}
+
+.sub2-details p {
+  margin: 2px 0;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .form input {
+    font-size: 16px;
+    height: 45px;
+  }
+
+  .form button {
+    height: 45px;
+  }
+
+  .details p.temp {
+    font-size: 36px;
+  }
+
+  .details p.city-name {
+    font-size: 28px;
+    margin: 15px 0;
+  }
+
+  .details img {
+    width: 100px;
+  }
+
+  .sub2-details .value {
+    font-size: 18px;
+  }
+}
+
+body.dark-mode {
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+}
+
+body.dark-mode header {
+  background-color: #0d0d0d;
+}
+
+body.dark-mode .container {
+  background: #0a0a0a;
+}
+
+body.dark-mode .form input {
+  background: #1a2a3a;
+  color: #e0e0e0;
+}
+
+body.dark-mode .form input:focus {
+  background-color: #1e344a;
+}
+
+body.dark-mode .form button {
+  background: #1e90ff;
+}
+
+body.dark-mode .form button:hover {
+  background-color: #1c86ee;
+}
+
+body.dark-mode .sub-detail-item {
+  background: #0d0d0d;
+}
+
+body.dark-mode .sub-detail-item:hover {
+  background-color: #1a1a1a;
+}
